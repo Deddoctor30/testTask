@@ -1,0 +1,38 @@
+.main {
+
+   &__galery {
+   }
+}
+.galery {
+
+   &__text {
+      margin: 40px 0px;
+   }
+
+   &__wrapper {
+      width: 1120px;
+      min-height: 248px;
+      background-color: #D4FF5A;
+      margin: 0 auto;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+   }
+
+   &__items {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+   }
+
+   &__item {
+      width: 198px;
+      height: 198px;
+      background: #497957;
+      border: 2px solid #00FF4A;
+      box-shadow: 2px 5px 10px #497957;
+      border-radius: 35px;
+   }
+}
+.text {
+}

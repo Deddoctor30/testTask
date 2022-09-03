@@ -1,0 +1,33 @@
+.header {
+   background: #B47FF7;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 148px;
+   &__menu {
+   }
+
+   &__burger {
+   }
+}
+.menu {
+   &__list {
+      margin: 0px 0px 0px 155px;
+      display: flex;
+      &>*:not(:last-child){
+         margin: 0px 60px 0px 0px;
+      }
+   }
+
+   &__item {
+      &:hover{
+         text-decoration: underline;
+      }
+      cursor: pointer;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 45px;
+      color: #FFFFFF;
+   }
+}

@@ -1,0 +1,47 @@
+.main {
+
+   &__content {
+   }
+}
+.content {
+
+   &__text {
+      margin: 40px 0px;
+   }
+
+   &__blocks {
+   }
+}
+.blocks {
+   display: flex;
+   gap: 13px;
+   flex-wrap: wrap;
+
+   font-style: normal;
+   font-weight: 400;
+   font-size: 53px;
+   line-height: 62px;
+   color: #FFFFFF;
+
+   &>*{
+      min-height: 198px;
+      background-color: #3ADE4B;
+   }
+
+   &__block-one {
+      flex: 0 0 33.5%;
+   }
+
+   &__block-two {
+      flex: 0 0 65.3%;
+   }
+
+   &__block-three {
+      flex: 0 0 85%;
+   }
+
+   &__block-four {
+      flex: 0 0 13.8%;
+   }
+}
+

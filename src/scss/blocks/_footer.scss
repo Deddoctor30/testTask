@@ -1,0 +1,15 @@
+.footer {
+   background-color: #D87FF6;
+   min-height: 100px;
+   display: flex;
+   align-items: center;
+   &__items {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+   }
+
+   &__item {
+   }
+}
