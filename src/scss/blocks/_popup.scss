@@ -6,7 +6,11 @@
 .popup {
    margin: 40px 0px;
    &__text {
-      margin-bottom: 24px;
+      margin-bottom: 9px;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 45px;
+      color: #F3F3F3;
    }
 
    &__btn {

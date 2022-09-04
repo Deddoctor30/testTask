@@ -6,11 +6,13 @@
 .galery {
 
    &__text {
+      display: inline-block;
       margin: 40px 0px;
+      padding: 0px 0px 0px 542px;
    }
 
    &__wrapper {
-      width: 1120px;
+      width: 95.727%;
       min-height: 248px;
       background-color: #D4FF5A;
       margin: 0 auto;
@@ -20,18 +22,25 @@
    }
 
    &__items {
+      padding: 0px 25px;
       display: flex;
-      justify-content: space-evenly;
       width: 100%;
+
+      &>*:not(:last-child){
+         margin: 0px 20px 0px 0px;
+      }
    }
 
    &__item {
       width: 198px;
-      height: 198px;
       background: #497957;
       border: 2px solid #00FF4A;
-      box-shadow: 2px 5px 10px #497957;
       border-radius: 35px;
+      &:hover{
+         box-shadow: 2px 5px 10px #497957;
+      }
+
+      padding: 0px 0px 18.15% 0px;
    }
 }
 .text {

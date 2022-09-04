@@ -6,7 +6,9 @@
 .content {
 
    &__text {
+      display: inline-block;
       margin: 40px 0px;
+      padding: 0px 0px 0px 542px;
    }
 
    &__blocks {
@@ -22,6 +24,9 @@
    font-size: 53px;
    line-height: 62px;
    color: #FFFFFF;
+   // min-height: 414px;
+   background-color: #BEB9FF;
+   border-bottom: solid #BEB9FF 5px;
 
    &>*{
       min-height: 198px;
@@ -29,19 +34,51 @@
    }
 
    &__block-one {
-      flex: 0 0 33.5%;
+      position: relative;
+      &::after{
+         content: "1";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+      flex: 1 1 33.5%;
    }
 
    &__block-two {
-      flex: 0 0 65.3%;
+      position: relative;
+      &::after{
+         content: "2";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+      flex: 1 1 65.3%;
    }
 
    &__block-three {
-      flex: 0 0 85%;
+      position: relative;
+      &::after{
+         content: "3";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+      flex: 1 1 85%;
    }
 
    &__block-four {
-      flex: 0 0 13.8%;
+      position: relative;
+      &::after{
+         content: "4";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+      flex: 1 1 13.8%;
    }
 }
 

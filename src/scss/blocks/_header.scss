@@ -1,10 +1,16 @@
 .header {
+   position: relative;
    background: #B47FF7;
    display: flex;
    justify-content: space-between;
    align-items: center;
    min-height: 148px;
    &__menu {
+
+   }
+
+   &__burger-content {
+      transition: all .5s ease;
    }
 
    &__burger {
@@ -12,7 +18,7 @@
 }
 .menu {
    &__list {
-      margin: 0px 0px 0px 155px;
+      margin: 9px 0px 0px 155px;
       display: flex;
       &>*:not(:last-child){
          margin: 0px 60px 0px 0px;
@@ -25,9 +31,117 @@
       }
       cursor: pointer;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 28px;
       line-height: 45px;
       color: #FFFFFF;
+   }
+}
+
+.burger-content {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 15;
+   width: 451px;
+   height: 500px;
+   background-color: #A6C9FF;
+
+   
+
+   &__list {
+      margin: 33px 0px 0px 64.5px;
+      &>*:not(:last-child){
+         margin: 0px 0px 39px 0px;
+      }
+   }
+
+   &__item {
+      text-align: left;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 45px;
+      a {
+         &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+      }
+
+      }
+   }
+
+   &__btn {
+      margin: 0 auto;
+      margin-top: 55px;
+   }
+}
+
+
+.burger {
+   cursor: pointer;
+   margin: 2px 55.63px 0px 0px;
+   &__icon {
+      display: block;
+      position: relative;
+      width: 43px;
+      height: 26px;
+      z-index: 5;
+
+      &::before{
+         content: "";
+         left: 0;
+         position: absolute;
+         height: 10%;
+         width: 100%;
+         transition: all 0.2s ease;
+         background-color: #fff;
+         top: 0;
+      }
+      &::after{
+         content: "";
+         left: 0;
+         position: absolute;
+         height: 10%;
+         width: 100%;
+         transition: all 0.2s ease;
+         background-color: #fff;
+         bottom: 0;
+      }
+      span{
+         left: 0;
+         position: absolute;
+         height: 10%;
+         width: 100%;
+         transition: all 0.2s ease;
+         background-color: #fff;
+         top: 50%;
+         transform: translate(0px, -50%) scale(1);
+      }
+
+   }
+
+   &__bar {
+   }
+}
+
+
+.burger-content._active {
+   position: absolute;
+   top: -1000px;
+   left: 0;
+}
+
+.burger__icon._active {
+   span {
+      transform: translate(0px, -50%) scale(0);
+   }
+   &::before{
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+   }
+   &::after{
+      top: 50%;
+      transform: rotate(45deg) translate(0px, -50%);
    }
 }

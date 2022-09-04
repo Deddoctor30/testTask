@@ -10,56 +10,98 @@
 <body>
    <div class="wrapper">
       <div class="container">
-         <header class="header">
-            <nav class="header__menu">
-               <ul class="menu__list">
-                  <li class="menu__item">Text</li>
-                  <li class="menu__item">Text</li>
-                  <li class="menu__item">Text</li>
-               </ul>
-            </nav>
-            <div class="header__burger">
-               <span></span>
-            </div>
-         </header>
-         <main class="main">
-            <section class="main__slider slider">
-               <h1 class="slider__content">H1 text</h1>
-            </section>
-            <section class="main__content content">
-               <h2 class="content__text text">H2 text</h2>
-               <div class="content__blocks blocks">
-                  <div class="blocks__block-one">1</div>
-                  <div class="blocks__block-two">2</div>
-                  <div class="blocks__block-three">3</div>
-                  <div class="blocks__block-four">4</div>
-               </div>
-            </section>
-            <section class="main__galery galery">
-               <h2 class="galery__text text">H2 text</h2>
-               <div class="galery__wrapper">
-                  <ul class="galery__items">
-                     <li class="galery__item"></li>
-                     <li class="galery__item"></li>
-                     <li class="galery__item"></li>
-                     <li class="galery__item"></li>
-                     <li class="galery__item"></li>
+         <div class="background">
+            <header class="header">
+               <nav class="header__menu">
+                  <ul class="menu__list">
+                     <li class="menu__item">Text</li>
+                     <li class="menu__item">Text</li>
+                     <li class="menu__item">Text</li>
                   </ul>
+               </nav>
+               <div class="header__burger-content burger-content _active">
+                  <ul class="burger-content__list">
+                     <li class="burger-content__item text"><a href="#">Text</a></li>
+                     <li class="burger-content__item text"><a href="#">Text</a></li>
+                     <li class="burger-content__item text"><a href="#">Text</a></li>
+                     <li class="burger-content__item text"><a href="#">Text</a></li>
+                  </ul>
+                  <div class="burger-content__btn btn modal-btn">Open pop-up button</div>
                </div>
-            </section>
-            <section class="main__popup popup">
-               <h3 class="popup__text text">Text utp</h3>
-               <div class="popup__btn btn">Open pop-up button</div>
-            </section>
-         </main>
-         <footer class="footer">
-            <ul class="footer__items">
-               <li class="footer__item text">Text</li>
-               <li class="footer__item text">Text</li>
-               <li class="footer__item text">Text</li>
-               <li class="footer__item text">Text</li>
-            </ul>
-         </footer>
+               <div class="header__burger burger">
+                  <div class="burger__icon">
+                     <span></span>
+                  </div>
+               </div>
+            </header>
+            <main class="main">
+               <section class="main__slider slider">
+                  <div class="slider__arrows">
+                     <div class="slider__arrow-left"><img src="./img/arrows/left.png" alt="left-arrow"></div>
+                     <div class="slider__arrow-right"><img src="./img/arrows/right.png" alt="right-arrow"></div>
+                  </div>
+                  <div class="slider__wrapper-main">
+                     <div class="slider__wrapper">
+                        <div class="slider__items">
+                           <div class="slider__item">
+                              <h1 class="slider__content">H1 <span>text</span></h1>
+                              <div class="slider__btn btn modal-btn">Open pop-up button</div>
+                           </div>
+                           <div class="slider__item">
+                              <h1 class="slider__content">H2 <span>text</span></h1>
+                              <div class="slider__btn btn modal-btn">Open pop-up button</div>
+                           </div>
+                           <div class="slider__item">
+                              <h1 class="slider__content">H3 <span>text</span></h1>
+                              <div class="slider__btn btn modal-btn">Open pop-up button</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <section class="main__content content">
+                  <h2 class="content__text text">H2 text</h2>
+                  <div class="content__blocks blocks">
+                     <div class="blocks__block-one"></div>
+                     <div class="blocks__block-two"></div>
+                     <div class="blocks__block-three"></div>
+                     <div class="blocks__block-four"></div>
+                  </div>
+               </section>
+               <section class="main__galery galery">
+                  <h2 class="galery__text text">H2 text</h2>
+                  <div class="galery__wrapper">
+                     <ul class="galery__items">
+                        <li class="galery__item"></li>
+                        <li class="galery__item"></li>
+                        <li class="galery__item"></li>
+                        <li class="galery__item"></li>
+                        <li class="galery__item"></li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="main__popup popup">
+                  <h3 class="popup__text text">Text utp</h3>
+                  <div class="popup__btn btn modal-btn">Open pop-up button</div>
+               </section>
+            </main>
+            <footer class="footer">
+               <ul class="footer__items">
+                  <li class="footer__item text">Text</li>
+                  <li class="footer__item text">Text</li>
+                  <li class="footer__item text">Text</li>
+                  <li class="footer__item text">Text</li>
+               </ul>
+            </footer>
+            <div class="modal _active">
+               <div class="modal__inner _active">
+                  <p class="modal__text text">Pop-up</p>
+                  <div class="modal__close">
+                     <span>X</span>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    </div>
 <script src="../dist/js/bundle.js"></script>   
