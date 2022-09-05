@@ -6,14 +6,17 @@
    &__items {
       display: flex;
       align-items: center;
-      width: 100%;
-      margin: 0px 0px 0px 204.5px;
-      &>*:not(:last-child){
-         margin: 0px 175px 0px 0px;
-      }
+      width: 745px;
+      margin: 0px 18.86% 0px 17.5%;
+      justify-content: space-between;
+      // gap: 175px;
+      // &>*:not(:last-child){
+      //    margin: 0px 175px 0px 0px;
+      // }
    }
 
    &__item {
+      // flex: 1 1 100%;
       font-style: normal;
       font-weight: 500;
       font-size: 28px;

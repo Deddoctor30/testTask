@@ -23,6 +23,12 @@
       &>*:not(:last-child){
          margin: 0px 60px 0px 0px;
       }
+      @media (max-width:745px) {
+         margin: 9px 0px 0px 50px;
+      }
+      @media (max-width:540px) {
+         margin: 9px 0px 0px 10px;
+      }
    }
 
    &__item {
